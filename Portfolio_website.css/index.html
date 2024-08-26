@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF -8">
+    <meta name="width=device-width,initial-scale=1.0">
+    <title>simple Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<html>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image.jpg" class="LOGO">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#aboutme">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS AND EDUCATION</a></li>
+                    <li><a href="#my-project">MY PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>College Student</p>
+                <h1>Hi, I am <span> BIDISHA</span> MAJUMDER <br> From KOLKATA,INDIA</h1>
+            </div>
+            <div class="resume_button">
+                <a href="https://drive.google.com/file/d/1HrME1y-mC8W5lNXG-3L3GbkqLfBt6oen/view?usp=drivesdk" target="_blank"><button class="btn btn-secondary">My Resume</button></a>
+                <a href="#my-project"><button class="btn btn-primary" href="#my-project"></button></a>
+            </div>
+        </div>
+    </div>
+    <div class="seperation"></div>
+    <!------------ABOUT US------------>
+    <div id="aboutme">
+        <div class="container1">
+           <div class="box">
+                <div class="left-side-box">
+<img src="Asset/img/user-jpg" alt="">
+</div>
+<div class="right-side-box">
+<h1 class="sub-title">About<span>Me</span></h1>
+<h3>Hello! I am Bidisha Majumder</h3>
+<p>
+A passionate College Student from the department of Electronics and Communication Engineering from Techno International Newtown.
+Currently, I'm working at CODSOFT as an Intern as a Web Developer.i am currently growing my skills on Java,C,C++ and HTML. My other hobbies
+are playing badminton,singing and reading books.
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------SKILLS------------------->
+
+    <div id="SKILLS">
+         <div class="container2">
+            <div class="title">
+                <p class="title-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="title-links" onclick="opentab('education')">Educations</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web Delevopment</span><br>Developing Web Pages</li>
+                    <li><span>Cascading Style Sheets (CSS)</span>br>Styling Websites</li>
+                    <li><span>HTML</span><br>Documents Designed to be Displayed in a Web Browser</li>
+                    <li><span>Problem Solving</span><br>Discovering, Analyzing, and Solving Problems</li>
+                    <li><span>Bootstrap</span><br>OpenSource CSS Framework</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2020</span><br>Xth- Kendriya Vidyalaya RBNM Salboni</li>
+                    <li><span>2022</span><br>XIIth- Kendriya Vidyalaya RBNM Salboni</li>
+                    <li><span>2022-2026</span><br>BTech Electronics and Communication <br>At Techno International New Town</li>
+                    <li></span>Problem Solving</span><br>Discovering, Analyzing, and Solving Problems</li><li>span>Bootstraps/span><br>OpenSource CSS Framework</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------My Projects----------------------------------->
+    <div id="my-project">
+        <div class="container3">
+        <h1 class="heading">My<span>Project</span></div><h1>
+            <p> SCINTILLA 2023 - SMOKE ABSORBER </p>
+            <p> These are my works!</p>
+            <div class="container3-list"></div>
+
+
+
+
+
+
+    <!----------------------------------contact----------------------------------->
+    <div id="contact">
+        <div class="container4">
+            <h1 class="heading2">Contact<span>ME</span></h1>
+            <div class="boxx">
+                <h3> Address: <br> Silver Space , Madhyamgram, Kolkata, West Bengal. Pin code: 700132
+                </h3>
+                <h3> Phone<span>No.</span>: <br> +91 8972940335</h3>
+                <h3>Email<span>Id</span>:<br> @bidishamajumder05@gmail.com</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------------------------footer----------------------------------->
+
+    <footer>
+        <div id="footer">
+            <p>Copyright &copy; 2024; Designed By <span class="Designer">Bidisha Majumder</span></p>
+        </div>
+        
+    </footer>
+
+
+    <!---------------------------------------JS---------------------------------->
+    <script>
+        var titlelinks = document.getElementsByClassName("title-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(titlelink of titlelinks){
+                titlelink.classList.romove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.reomove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.gelElementById(tabname).classList.add("active-tab");
+        }        
+    </script>
+        
+        
+</body>
+<html>
